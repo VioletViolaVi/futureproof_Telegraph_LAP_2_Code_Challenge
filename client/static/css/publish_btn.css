@@ -22,7 +22,8 @@
   #bgForFormAndBtn2 {
     display: grid;
     grid-template-columns: 52rem 7rem;
-    align-items: center;
+    align-items: baseline;
+    justify-items: center;
   }
 
   #btn {
