@@ -1,4 +1,4 @@
-const pool = require('../dbConfig/init');
+// const pool = require('../dbConfig/init');
 
 module.exports = class Posts {
     constructor(data){
@@ -13,6 +13,9 @@ module.exports = class Posts {
         return new Promise (async (resolve, reject) => {
             try {
                 // add function to get all
+                const query = await pool.query('SELECT * FROM posts')
+                const posts = query.rows.map(p => ({ id: p.id, title: p.title, name: p.name, post: p.post}))
+                resolve(posts);   
             } catch (err) {
                 reject("Error, could not retrieve posts")
             }
