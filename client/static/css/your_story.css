@@ -22,11 +22,12 @@
 
 @media (min-width: 992px) {
   #yourStory {
-    width: 50rem;
+    width: 38rem;
   }
 }
 
 @media (min-width: 1200px) {
-}
-@media (min-width: 1400px) {
+  #yourStory {
+    width: 48rem;
+  }
 }

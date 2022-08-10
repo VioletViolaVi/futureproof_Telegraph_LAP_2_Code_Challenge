@@ -20,11 +20,12 @@
 
 @media (min-width: 992px) {
   #yourName {
-    width: 50rem;
+    width: 38rem;
   }
 }
 
 @media (min-width: 1200px) {
-}
-@media (min-width: 1400px) {
+  #yourName {
+    width: 51rem;
+  }
 }
