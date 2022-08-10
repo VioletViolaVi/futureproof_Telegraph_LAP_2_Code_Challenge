@@ -1,6 +1,6 @@
-// const pool = require('../dbConfig/init');
+const pool = require('../dbConfig/pool');
 
-module.exports = class Posts {
+module.exports = class Post {
     constructor(data){
         this.id = data.id;
         this.title = data.title;
@@ -13,8 +13,8 @@ module.exports = class Posts {
         return new Promise (async (resolve, reject) => {
             try {
                 // add function to get all
-                const query = await pool.query('SELECT * FROM posts')
-                const posts = query.rows.map(p => ({ id: p.id, title: p.title, name: p.name, post: p.post}))
+                const data = await pool.query('SELECT * FROM posts')
+                const posts = data.rows.map(p => ({ id: p.id, title: p.title, name: p.name, post: p.post}))
                 resolve(posts);   
             } catch (err) {
                 reject("Error, could not retrieve posts")
@@ -27,16 +27,23 @@ module.exports = class Posts {
         return new Promise (async (resolve, reject) => {
             try {
                 //add function to get by id
+                const data = await pool.query('SELECT * FROM posts WHERE id = $1;', [ id ]);
+                let post = new Post(data.rows[0]);
+                resolve(post);
             } catch (err) {
                 reject('Error, could not find post')
             }
         })
     };
 
-    static create(title){
+    static create(title, name, post){
         return new Promise (async (resolve, reject) => {
             try {
                 // add function to create new post
+                let data = await pool.query('INSERT INTO posts (title, name, post) VALUES ($1, $2, $3) RETURNING *;', [ title, name, post ]);
+                let post = new Post(data.rows[0]);
+                resolve(post);
+
             } catch (err) {
                 reject ('Error, could not create post')
             }
