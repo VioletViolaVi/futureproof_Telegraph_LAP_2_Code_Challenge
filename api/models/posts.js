@@ -41,8 +41,8 @@ module.exports = class Post {
             try {
                 // add function to create new post
                 let data = await pool.query('INSERT INTO posts (title, name, post) VALUES ($1, $2, $3) RETURNING *;', [ title, name, post ]);
-                let post = new Post(data.rows[0]);
-                resolve(post);
+                let newPost = new Post(data.rows[0]);
+                resolve(newPost);
 
             } catch (err) {
                 reject ('Error, could not create post')

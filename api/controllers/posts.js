@@ -24,8 +24,9 @@ async function show(req, res) {
 
 async function create(req, res) {
     try {
-        res.send("all okay create")
         // add controller for creating post
+        const post = await Post.create(req.body.title, req.body.name, req.body.post);
+        res.status(200).json(post)
     } catch {
         // add error message
         res.status(500).send("didnt work create");
