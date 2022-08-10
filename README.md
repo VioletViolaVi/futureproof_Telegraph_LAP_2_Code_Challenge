@@ -2,11 +2,17 @@
 
 ## Installation & usage
 
-1. Whilst in the main folder run **bash _scripts/startDev.sh**
+### Server startup with seeded database
+
+* Whilst in the main folder run **bash _scripts/startDevFresh.sh**
+
+### Server startup without seeding database
+
+* Whilst in the main folder run **bash _scripts/startDev.sh**
 
 
 
-To close down the containers run **bash _scripts/teardown.sh**
+To close down the containers run **bash _scripts/teardown.sh** (if you would like to keep your data do not close the containers.)
 
 
 
