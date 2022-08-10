@@ -2,9 +2,12 @@
   color: red;
 }
 
+#warningBg {
+  margin: 0.5rem 1rem;
+}
+
 #warningPara {
   color: red;
   font-size: 1rem;
-  margin: 0.5rem 1rem;
-  display: none;
+  display: inline;
 }
