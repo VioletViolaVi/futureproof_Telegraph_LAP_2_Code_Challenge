@@ -25,11 +25,16 @@
 }
 
 @media (min-width: 992px) {
+  #titleInputAndLabelBg {
+    position: relative;
+  }
+
   #titleLabel {
-    text-align: right;
-    clear: both;
     font-size: 1.5rem;
     color: grey;
+    position: absolute;
+    left: -3.5rem;
+    bottom: 0.7rem;
   }
 
   #title {
