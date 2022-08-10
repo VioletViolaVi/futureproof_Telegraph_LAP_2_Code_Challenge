@@ -1,0 +1,24 @@
+{
+  "description": "lap2 api",
+  "scripts": {
+    "start": "node dbConfig/dbInit.js",
+    "dev": "nodemon -L index.js",
+    "startAll": "npm run start && npm run dev"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "author": "futureproof",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "pg": "^8.3.3"
+  }
+}
