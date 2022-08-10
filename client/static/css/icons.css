@@ -5,24 +5,17 @@
 
 #iconsBg {
   margin-right: 0.5rem;
-  /* display: none; */
+  display: none;
 }
 
 .fa-solid.fa-camera,
 .fa-solid.fa-angle-left,
 .fa-solid.fa-angle-right {
-  /* display: none; */
+  display: none;
   cursor: pointer;
   color: #353839;
 }
 
-@media (min-width: 576px) {
-}
-@media (min-width: 768px) {
-}
-@media (min-width: 992px) {
-}
-@media (min-width: 1200px) {
-}
-@media (min-width: 1400px) {
+.fa-solid.fa-angle-right {
+  margin: 0 0.5rem 0 0;
 }
