@@ -25,12 +25,10 @@
 
 @media (min-width: 992px) {
   #authorLabel {
-    display: none;
     text-align: right;
     clear: both;
     font-size: 0.8rem;
     color: grey;
-    /* float: left; */
   }
 
   #yourName {
