@@ -10,8 +10,18 @@
 
 @media (min-width: 992px) {
   #warningBg {
+    position: relative;
+  }
+
+  #warningPara {
     position: absolute;
-    right: 2.5rem;
-    top: 5rem;
+    right: -33.5rem;
+    top: -38rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #warningPara {
+    right: -32rem;
   }
 }
