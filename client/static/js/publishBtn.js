@@ -34,8 +34,8 @@ for (let i = 0; i < bothBtns.length; i++) {
         timeStamp.style.display = "block";
 
         // clears screen to go again
-        if (btn.textContent !== "EDIT") {
-          btn.textContent = "EDIT";
+        if (btn.textContent !== "NEW") {
+          btn.textContent = "NEW";
         } else {
           btn.textContent = "PUBLISH";
           title.value = "";
@@ -70,10 +70,10 @@ for (let i = 0; i < bothBtns.length; i++) {
         timeStamp.style.display = "block";
 
         // clears screen to go again
-        if (btn.textContent !== "EDIT") {
-          btn.textContent = "EDIT";
+        if (btn2.textContent !== "NEW") {
+          btn2.textContent = "NEW";
         } else {
-          btn.textContent = "PUBLISH";
+          btn2.textContent = "PUBLISH";
           title.value = "";
           yourName.value = "";
           yourStory2.value = "";
