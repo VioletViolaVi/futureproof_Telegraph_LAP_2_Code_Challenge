@@ -11,6 +11,7 @@ yourName.addEventListener("keydown", () => {
   // stops label showing on smaller screens
   if (getWidth() >= 992) {
     authorLabel.style.display = "inline";
+    yourName.style.borderLeft = "0.1rem solid grey";
   } else {
     authorLabel.style.display = "none";
   }
