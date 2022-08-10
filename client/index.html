@@ -33,12 +33,12 @@
       <form action="" id="formBg">
         <aside>
           <label for="" id="titleLabel">Title</label>
-          <input type="text" name="" id="title" placeholder="Title" />
+          <input type="text" id="title" placeholder="Title (max 40)" />
         </aside>
 
         <aside>
           <label for="" id="authorLabel">Author</label>
-          <input type="text" name="" id="yourName" placeholder="Your name" />
+          <input type="text" id="yourName" placeholder="Your name (max 40)" />
         </aside>
 
         <section id="yourStoryAndIcons">
@@ -54,7 +54,7 @@
             id="yourStory"
             cols="20"
             rows="10"
-            placeholder="Your story..."
+            placeholder="Your story... (max 200)"
           ></textarea>
           <!-- larger screens -->
           <textarea
@@ -62,7 +62,7 @@
             id="yourStory2"
             cols="20"
             rows="10"
-            placeholder="Your story..."
+            placeholder="Your story... (max 200)"
           ></textarea>
         </section>
 
@@ -70,8 +70,8 @@
       </form>
       <button id="btn2">PUBLISH</button>
 
-      <aside>
-        <p id="warningPara">Title is too small</p>
+      <aside id="warningBg">
+        <p id="warningPara"></p>
       </aside>
     </main>
   </body>
