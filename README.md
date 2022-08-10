@@ -1,4 +1,4 @@
-# Futureproof Telegraph LAP 2 Code Challenge
+# Futureproof Telegraph Lap 2 Code Challenge
 
 This website allows users to write down their thoughts and remain anonymous whilst doing so. The project structure and design is based on [Telegraph](https://telegra.ph/). This is coding project was assigned by [futureproof](https://www.getfutureproof.co.uk/).
 
