@@ -1,4 +1,4 @@
-# futureproof_Telegraph_LAP_2_Code_Challenge
+# Futureproof_Telegraph_LAP_2_Code_Challenge
 
 ## Installation & usage
 
