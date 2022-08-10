@@ -10,6 +10,12 @@
   outline: none;
 }
 
+#timeStamp {
+  font-size: 0.9rem;
+  color: grey;
+  display: none;
+}
+
 @media (min-width: 576px) {
   #yourName {
     width: 30rem;
