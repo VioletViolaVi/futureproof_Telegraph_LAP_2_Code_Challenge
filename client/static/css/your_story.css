@@ -8,6 +8,10 @@
   resize: none;
 }
 
+#yourStory2 {
+  display: none;
+}
+
 @media (min-width: 576px) {
   #yourStory {
     width: 30rem;
@@ -22,12 +26,24 @@
 
 @media (min-width: 992px) {
   #yourStory {
+    display: none;
+  }
+
+  #yourStory2 {
+    display: inline;
     width: 38rem;
+    height: 2rem;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    overflow: hidden;
+    resize: none;
+    border: solid 0.1rem black;
   }
 }
 
 @media (min-width: 1200px) {
-  #yourStory {
+  #yourStory2 {
     width: 48rem;
   }
 }

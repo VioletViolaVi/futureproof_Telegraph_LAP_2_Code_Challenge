@@ -22,6 +22,7 @@
 @media (min-width: 992px) {
   #title {
     width: 38rem;
+    border: solid 0.1rem black;
   }
 }
 
