@@ -1,0 +1,1 @@
+docker compose -f docker-compose.yaml -f docker-compose.dev2.yaml up
