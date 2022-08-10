@@ -1,21 +1,3 @@
-// textarea
-const yourStory = document.getElementById("yourStory");
-const yourStory2 = document.getElementById("yourStory2");
-// both textarea
-const allTextAreas = [yourStory, yourStory2];
-// icons container
-const iconsBg = document.getElementById("iconsBg");
-// icons
-const left = document.getElementById("left");
-const right = document.getElementById("right");
-const camera = document.getElementById("camera");
-// buttons
-const btn = document.getElementById("btn");
-const btn2 = document.getElementById("btn2");
-// both
-const bothBtns = [btn, btn2];
-// warning message
-const warningPara = document.getElementById("warningPara");
 // label
 const titleLabel = document.getElementById("titleLabel");
 // title input
@@ -24,6 +6,24 @@ const title = document.getElementById("title");
 const authorLabel = document.getElementById("authorLabel");
 // input field
 const yourName = document.getElementById("yourName");
+// icons container
+const iconsBg = document.getElementById("iconsBg");
+// icons
+const left = document.getElementById("left");
+const right = document.getElementById("right");
+const camera = document.getElementById("camera");
+// textarea
+const yourStory = document.getElementById("yourStory");
+const yourStory2 = document.getElementById("yourStory2");
+// both textarea
+const allTextAreas = [yourStory, yourStory2];
+// buttons
+const btn = document.getElementById("btn");
+const btn2 = document.getElementById("btn2");
+// both
+const bothBtns = [btn, btn2];
+// warning message
+const warningPara = document.getElementById("warningPara");
 
 /********************************************************************* title */
 // gets width of browser screen
@@ -91,17 +91,53 @@ function textAreaAdjust(element) {
 /********************************************************************* publish btn */
 for (let i = 0; i < bothBtns.length; i++) {
   // btn click functions
-  bothBtns[i].addEventListener("click", () => {
+  bothBtns[i].addEventListener("click", (event) => {
+    event.preventDefault();
+
     // removes icons
     iconsBg.style.display = "none";
     left.style.display = "none";
     right.style.display = "none";
     camera.style.display = "none";
 
-    // displays red message
-    if (title.value === "") {
-      title.addClass(".warning::-webkit-input-placeholder");
-      warningPara.style.display = "inline";
+    // displays red message for smaller screens
+    if (getWidth() < 992) {
+      // input handling
+      if (title.value.length > 40) {
+        warningPara.textContent = "Title is too big";
+      } else if (title.value.length === 0) {
+        warningPara.textContent = "Title cannot be empty";
+      } else if (yourName.value.length > 40) {
+        warningPara.textContent = "Author is too big";
+      } else if (yourName.value.length === 0) {
+        warningPara.textContent = "Author cannot be empty";
+      } else if (yourStory.value.length > 40) {
+        warningPara.textContent = "Your story is too big";
+      } else if (yourStory.value.length === 0) {
+        warningPara.textContent = "Your story cannot be empty";
+      } else {
+        warningPara.textContent = "";
+      }
+    }
+
+    // displays red message for larger screens
+    if (getWidth() >= 992) {
+      // input handling
+      if (title.value.length > 40) {
+        warningPara.textContent = "Title is too big";
+      } else if (title.value.length === 0) {
+        warningPara.textContent = "Title cannot be empty";
+      } else if (yourName.value.length > 40) {
+        warningPara.textContent = "Author is too big";
+      } else if (yourName.value.length === 0) {
+        warningPara.textContent = "Author cannot be empty";
+      } else if (yourStory2.value.length > 40) {
+        warningPara.textContent = "Your story is too big";
+      } else if (yourStory2.value.length === 0) {
+        warningPara.textContent = "Your story cannot be empty";
+      } else {
+        warningPara.textContent = "";
+      }
     }
   });
 }
