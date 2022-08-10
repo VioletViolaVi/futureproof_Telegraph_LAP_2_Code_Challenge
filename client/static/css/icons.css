@@ -19,3 +19,17 @@
 .fa-solid.fa-angle-right {
   margin: 0 0.5rem 0 0;
 }
+
+@media (min-width: 992px) {
+  #yourStoryAndIcons {
+    position: relative;
+  }
+
+  #iconsBg {
+    font-size: 1rem;
+    color: grey;
+    position: absolute;
+    left: -3rem;
+    bottom: 2.7rem;
+  }
+}
