@@ -9,6 +9,7 @@
 @media (min-width: 992px) {
   #formBg {
     padding-left: 8rem;
+    grid-gap: 1rem;
   }
 }
 
