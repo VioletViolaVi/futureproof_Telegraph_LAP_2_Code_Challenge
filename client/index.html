@@ -20,24 +20,37 @@
       defer
     ></script>
     <!-- custom js links -->
-    <script src="./static/js/icons.js" defer></script>
-    <script src="./static/js/publishBtn.js" defer></script>
+    <script src="./static/js/variables.js" defer></script>
     <script src="./static/js/title.js" defer></script>
     <script src="./static/js/yourName.js" defer></script>
+    <script src="./static/js/icons.js" defer></script>
     <script src="./static/js/yourStory.js" defer></script>
+    <script src="./static/js/publishBtn.js" defer></script>
     <title>Telegraph | LAP 2 Code Challenge</title>
   </head>
   <body id="bodyBg">
     <main id="bgForFormAndBtn2">
+      <!-- form -->
       <form action="" id="formBg">
-        <aside>
+        <!-- inputs -->
+        <aside id="titleInputAndLabelBg">
           <label for="" id="titleLabel">Title</label>
-          <input type="text" name="" id="title" placeholder="Title" />
+          <input
+            type="text"
+            id="title"
+            placeholder="Title (max 40)"
+            name="title"
+          />
         </aside>
 
-        <aside>
+        <aside id="yourNameInputAndLabelBg">
           <label for="" id="authorLabel">Author</label>
-          <input type="text" name="" id="yourName" placeholder="Your name" />
+          <input
+            type="text"
+            id="yourName"
+            placeholder="Your name (max 40)"
+            name="yourName"
+          />
         </aside>
 
         <section id="yourStoryAndIcons">
@@ -49,28 +62,31 @@
           <!-- smaller screens -->
           <textarea
             onkeyup="textAreaAdjust(this)"
-            name=""
+            name="yourStory"
             id="yourStory"
             cols="20"
             rows="10"
-            placeholder="Your story..."
+            placeholder="Your story... (max 200)"
           ></textarea>
           <!-- larger screens -->
           <textarea
-            name=""
+            name="yourStory2"
             id="yourStory2"
             cols="20"
             rows="10"
-            placeholder="Your story..."
+            placeholder="Your story... (max 200)"
           ></textarea>
         </section>
 
+        <!-- btn for smaller screens -->
         <button id="btn">PUBLISH</button>
       </form>
+
+      <!-- btn for larger screens -->
       <button id="btn2">PUBLISH</button>
 
-      <aside>
-        <p id="warningPara">Title is too small</p>
+      <aside id="warningBg">
+        <p id="warningPara"></p>
       </aside>
     </main>
   </body>

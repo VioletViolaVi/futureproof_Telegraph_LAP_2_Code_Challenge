@@ -45,11 +45,17 @@
 
 @media (min-width: 1200px) {
   #bgForFormAndBtn2 {
-    grid-template-columns: 0 39rem;
+    grid-template-columns: 37rem 16rem;
     justify-content: end;
   }
 
   #bgForFormAndBtn2 {
     justify-items: center;
+  }
+}
+
+@media (min-width: 1500px) {
+  #bgForFormAndBtn2 {
+    grid-template-columns: 0 52rem;
   }
 }

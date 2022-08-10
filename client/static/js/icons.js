@@ -1,16 +1,5 @@
-// textarea
-const yourStory = document.getElementById("yourStory");
-const yourStory2 = document.getElementById("yourStory2");
-// both
-const allTextAreas = [yourStory, yourStory2];
-
-// icons container
-const iconsBg = document.getElementById("iconsBg");
-// icons
-const left = document.getElementById("left");
-const right = document.getElementById("right");
-const camera = document.getElementById("camera");
-
+/********************************************************************* icons */
+// shows icons when textarea clicked
 for (let i = 0; i < allTextAreas.length; i++) {
   allTextAreas[i].addEventListener("click", () => {
     iconsBg.style.display = "inline";
@@ -19,3 +8,31 @@ for (let i = 0; i < allTextAreas.length; i++) {
     camera.style.display = "inline";
   });
 }
+
+camera.addEventListener("click", () => {
+  yourStory.placeholder = "Place your photo(s) here";
+});
+
+left.addEventListener("click", () => {
+  yourStory.placeholder =
+    "Paste a YouTube, Vimeo or Twitter link, and press Enter";
+});
+
+right.addEventListener("click", () => {
+  yourStory.placeholder =
+    "Paste a YouTube, Vimeo or Twitter link, and press Enter";
+});
+
+camera.addEventListener("click", () => {
+  yourStory2.placeholder = "Place your photo(s) here";
+});
+
+left.addEventListener("click", () => {
+  yourStory2.placeholder =
+    "Paste a YouTube, Vimeo or Twitter link, and press Enter";
+});
+
+right.addEventListener("click", () => {
+  yourStory2.placeholder =
+    "Paste a YouTube, Vimeo or Twitter link, and press Enter";
+});

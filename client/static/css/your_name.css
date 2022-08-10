@@ -8,7 +8,6 @@
   font-size: 1rem;
   border: none;
   outline: none;
-  /* border: solid 0.1rem black; */
 }
 
 @media (min-width: 576px) {
@@ -24,19 +23,22 @@
 }
 
 @media (min-width: 992px) {
+  #yourNameInputAndLabelBg {
+    position: relative;
+  }
+
   #authorLabel {
-    display: none;
-    text-align: right;
-    clear: both;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: grey;
-    /* float: left; */
+    position: absolute;
+    left: -3.5rem;
+    bottom: 0.7rem;
   }
 
   #yourName {
     width: 38rem;
     padding-left: 0.5rem;
-    margin-left: 0.8rem;
+    margin-left: 0.3rem;
     border-left: 0.1rem solid grey;
   }
 }
