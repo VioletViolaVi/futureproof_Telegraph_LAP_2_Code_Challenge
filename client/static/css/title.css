@@ -5,6 +5,7 @@
   border: none;
   outline: none;
   font-weight: 900;
+  border: solid 0.1rem black;
 }
 
 @media (min-width: 576px) {
@@ -22,7 +23,6 @@
 @media (min-width: 992px) {
   #title {
     width: 38rem;
-    border: solid 0.1rem black;
   }
 }
 

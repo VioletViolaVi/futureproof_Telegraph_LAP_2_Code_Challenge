@@ -4,6 +4,7 @@
   font-size: 1rem;
   border: none;
   outline: none;
+  border: solid 0.1rem black;
 }
 
 @media (min-width: 576px) {
@@ -21,7 +22,6 @@
 @media (min-width: 992px) {
   #yourName {
     width: 38rem;
-    border: solid 0.1rem black;
   }
 }
 

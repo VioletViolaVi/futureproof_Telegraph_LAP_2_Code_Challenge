@@ -6,6 +6,7 @@
   border: none;
   overflow: hidden;
   resize: none;
+  border: solid 0.1rem black;
 }
 
 #yourStory2 {
