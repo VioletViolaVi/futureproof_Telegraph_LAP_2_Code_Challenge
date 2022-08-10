@@ -48,8 +48,9 @@ title.addEventListener("click", () => {
 // stops label showing on smaller screens
 title.addEventListener("keydown", () => {
   if (getWidth() >= 992) {
-    // label
     titleLabel.style.display = "inline";
+  } else {
+    titleLabel.display = "none";
   }
 });
 
@@ -65,8 +66,9 @@ yourName.addEventListener("click", () => {
 yourName.addEventListener("keydown", () => {
   // stops label showing on smaller screens
   if (getWidth() >= 992) {
-    // label
     authorLabel.style.display = "inline";
+  } else {
+    authorLabel.display = "none";
   }
 });
 
@@ -80,6 +82,40 @@ for (let i = 0; i < allTextAreas.length; i++) {
     camera.style.display = "inline";
   });
 }
+
+camera.addEventListener("click", () => {
+  yourStory.placeholder = "Place your photo(s) here";
+  console.log("Place your photo(s) here");
+});
+
+left.addEventListener("click", () => {
+  yourStory.placeholder =
+    "Paste a YouTube, Vimeo or Twitter link, and press Enter";
+  console.log("Paste a YouTube, Vimeo or Twitter link, and press Enter");
+});
+
+right.addEventListener("click", () => {
+  yourStory.placeholder =
+    "Paste a YouTube, Vimeo or Twitter link, and press Enter";
+  console.log("Paste a YouTube, Vimeo or Twitter link, and press Enter");
+});
+
+camera.addEventListener("click", () => {
+  yourStory2.placeholder = "Place your photo(s) here";
+  console.log("Place your photo(s) here");
+});
+
+left.addEventListener("click", () => {
+  yourStory2.placeholder =
+    "Paste a YouTube, Vimeo or Twitter link, and press Enter";
+  console.log("Paste a YouTube, Vimeo or Twitter link, and press Enter");
+});
+
+right.addEventListener("click", () => {
+  yourStory2.placeholder =
+    "Paste a YouTube, Vimeo or Twitter link, and press Enter";
+  console.log("Paste a YouTube, Vimeo or Twitter link, and press Enter");
+});
 
 /********************************************************************* yourStory */
 // allows textarea to expand auto when typing
