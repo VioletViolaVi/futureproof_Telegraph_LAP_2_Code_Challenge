@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- custom css links -->
-    <link rel="stylesheet" href="./static/css/universal.css" />
+    <link rel="stylesheet" href="./static/css/form.css" />
     <link rel="stylesheet" href="./static/css/icons.css" />
     <link rel="stylesheet" href="./static/css/publish_btn.css" />
     <link rel="stylesheet" href="./static/css/title.css" />
+    <link rel="stylesheet" href="./static/css/universal.css" />
     <link rel="stylesheet" href="./static/css/your_name.css" />
     <link rel="stylesheet" href="./static/css/your_story.css" />
     <!-- font awesome -->
@@ -21,12 +22,12 @@
   </head>
   <body>
     <main>
-      <form action="">
-        <input type="text" name="" id="" placeholder="Title" />
-        <input type="text" name="" id="" placeholder="Your name" />
+      <form action="" id="formBg">
+        <input type="text" name="" id="title" placeholder="Title" />
+        <input type="text" name="" id="yourName" placeholder="Your name" />
         <textarea
           name=""
-          id=""
+          id="yourStory"
           cols="30"
           rows="10"
           placeholder="Your story..."
@@ -36,7 +37,7 @@
           <i class="fa-solid fa-angle-left"></i>
           <i class="fa-solid fa-angle-right"></i>
         </section>
-        <button>PUBLISH</button>
+        <button id="btn">PUBLISH</button>
       </form>
     </main>
   </body>
