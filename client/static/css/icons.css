@@ -1,6 +1,7 @@
 .fa-solid.fa-camera,
 .fa-solid.fa-angle-left,
 .fa-solid.fa-angle-right {
+  display: none;
   cursor: pointer;
   color: #353839;
 }
