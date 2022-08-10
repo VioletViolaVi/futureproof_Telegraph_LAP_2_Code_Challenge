@@ -27,7 +27,22 @@ for (let i = 0; i < bothBtns.length; i++) {
         warningPara.textContent = "Your story cannot be empty";
       } else {
         warningPara.textContent = "";
-        btn.textContent = "EDIT";
+        titleLabel.style.display = "none";
+        title.style.borderColor = "#fffafa";
+        authorLabel.style.display = "none";
+        yourName.style.borderColor = "#fffafa";
+        timeStamp.style.display = "block";
+
+        // clears screen to go again
+        if (btn.textContent !== "EDIT") {
+          btn.textContent = "EDIT";
+        } else {
+          btn.textContent = "PUBLISH";
+          title.value = "";
+          yourName.value = "";
+          yourStory.value = "";
+          timeStamp.style.display = "none";
+        }
       }
     }
 
@@ -48,12 +63,22 @@ for (let i = 0; i < bothBtns.length; i++) {
         warningPara.textContent = "Your story cannot be empty";
       } else {
         warningPara.textContent = "";
-        btn2.textContent = "EDIT";
         titleLabel.style.display = "none";
         title.style.borderColor = "#fffafa";
         authorLabel.style.display = "none";
         yourName.style.borderColor = "#fffafa";
         timeStamp.style.display = "block";
+
+        // clears screen to go again
+        if (btn.textContent !== "EDIT") {
+          btn.textContent = "EDIT";
+        } else {
+          btn.textContent = "PUBLISH";
+          title.value = "";
+          yourName.value = "";
+          yourStory2.value = "";
+          timeStamp.style.display = "none";
+        }
       }
     }
   });
