@@ -19,19 +19,20 @@
       defer
     ></script>
     <!-- custom js links -->
+    <script src="./static/js/icons.js" defer></script>
     <script src="./static/js/yourStory.js" defer></script>
     <title>Telegraph | LAP 2 Code Challenge</title>
   </head>
-  <body>
+  <body id="bodyBg">
     <main id="bgForFormAndBtn2">
       <form action="" id="formBg">
         <input type="text" name="" id="title" placeholder="Title" />
         <input type="text" name="" id="yourName" placeholder="Your name" />
         <section id="yourStoryAndIcons">
           <aside id="iconsBg">
-            <i class="fa-solid fa-angle-left"></i>
-            <i class="fa-solid fa-angle-right"></i>
-            <i class="fa-solid fa-camera"></i>
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+            <i id="camera" class="fa-solid fa-camera"></i>
           </aside>
           <!-- smaller screens -->
           <textarea
