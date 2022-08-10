@@ -5,4 +5,28 @@
   outline: none;
   border: none;
   overflow: hidden;
+  resize: none;
+}
+
+@media (min-width: 576px) {
+  #yourStory {
+    width: 30rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #yourStory {
+    width: 42rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #yourStory {
+    width: 50rem;
+  }
+}
+
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
 }

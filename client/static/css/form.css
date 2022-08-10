@@ -5,3 +5,14 @@
   justify-items: start;
   padding: 2rem 0 0 1.5rem;
 }
+
+@media (min-width: 992px) {
+  #formBg {
+    padding-left: 8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
+}

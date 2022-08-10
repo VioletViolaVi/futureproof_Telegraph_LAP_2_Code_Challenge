@@ -6,3 +6,26 @@
   outline: none;
   font-weight: 900;
 }
+
+@media (min-width: 576px) {
+  #title {
+    width: 30rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #title {
+    width: 42rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #title {
+    width: 50rem;
+  }
+}
+
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
+}

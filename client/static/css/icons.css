@@ -1,7 +1,28 @@
+#yourStoryAndIcons {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+#iconsBg {
+  margin-right: 0.5rem;
+  /* display: none; */
+}
+
 .fa-solid.fa-camera,
 .fa-solid.fa-angle-left,
 .fa-solid.fa-angle-right {
-  display: none;
+  /* display: none; */
   cursor: pointer;
   color: #353839;
+}
+
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
 }
