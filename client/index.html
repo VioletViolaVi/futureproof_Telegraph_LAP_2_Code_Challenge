@@ -18,6 +18,8 @@
       crossorigin="anonymous"
       defer
     ></script>
+    <!-- custom js links -->
+    <script src="./static/js/yourStory.js" defer></script>
     <title>Telegraph | LAP 2 Code Challenge</title>
   </head>
   <body>
@@ -25,19 +27,24 @@
       <form action="" id="formBg">
         <input type="text" name="" id="title" placeholder="Title" />
         <input type="text" name="" id="yourName" placeholder="Your name" />
-        <textarea
-          name=""
-          id="yourStory"
-          cols="30"
-          rows="10"
-          placeholder="Your story..."
-        ></textarea>
-        <section>
-          <i class="fa-solid fa-camera"></i>
-          <i class="fa-solid fa-angle-left"></i>
-          <i class="fa-solid fa-angle-right"></i>
+
+        <section id="yourStoryAndIcons">
+          <aside id="iconsBg">
+            <i class="fa-solid fa-camera"></i>
+            <i class="fa-solid fa-angle-left"></i>
+            <i class="fa-solid fa-angle-right"></i>
+          </aside>
+          <textarea
+            onkeyup="textAreaAdjust(this)"
+            name=""
+            id="yourStory"
+            cols="20"
+            rows="10"
+            placeholder="Your story..."
+          ></textarea>
         </section>
-        <button id="btn"><h3>PUBLISH</h3></button>
+
+        <button id="btn">PUBLISH</button>
       </form>
     </main>
   </body>
