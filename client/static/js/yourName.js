@@ -16,3 +16,10 @@ yourName.addEventListener("keydown", () => {
   authorLabel.style.display = "inline";
   authorLabel.style.transition = "all 42s";
 });
+
+yourName.addEventListener("keydown", () => {
+  if (getWidth() >= 992) {
+    // label
+    authorLabel.style.display = "inline";
+  }
+});
