@@ -2,16 +2,26 @@ const Posts = require('..models/posts');
 
 async function index(req, res) {
     try {
-        // to add
+        // add controller to show all posts
     } catch {
-        //to add
+        // add error message
     }
 }
 
+async function show(req, res) {
+    try {
+        // add controller to show by id
+    } catch {
+        // add error message
+    }
+}
+    
+
+
 async function create(req, res) {
     try {
-        // to add
+        // add controller for creating post
     } catch {
-        //to add
+        // add error message
     }
 }
