@@ -12,6 +12,6 @@ yourName.addEventListener("keydown", () => {
   if (getWidth() >= 992) {
     authorLabel.style.display = "inline";
   } else {
-    authorLabel.display = "none";
+    authorLabel.style.display = "none";
   }
 });

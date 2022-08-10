@@ -23,6 +23,6 @@ title.addEventListener("keydown", () => {
   if (getWidth() >= 992) {
     titleLabel.style.display = "inline";
   } else {
-    titleLabel.display = "none";
+    titleLabel.style.display = "none";
   }
 });
