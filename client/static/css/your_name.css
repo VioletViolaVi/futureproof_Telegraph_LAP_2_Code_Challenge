@@ -10,6 +10,12 @@
   outline: none;
 }
 
+#timeStamp {
+  font-size: 0.9rem;
+  color: grey;
+  display: none;
+}
+
 @media (min-width: 576px) {
   #yourName {
     width: 30rem;
@@ -39,7 +45,11 @@
     width: 38rem;
     padding-left: 0.5rem;
     margin-left: 0.3rem;
-    border-left: 0.1rem solid grey;
+    border-left: none;
+  }
+
+  #timeStamp {
+    margin-left: 0.9rem;
   }
 }
 

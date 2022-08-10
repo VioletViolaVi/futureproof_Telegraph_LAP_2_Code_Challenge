@@ -1,5 +1,5 @@
 #yourStory {
-  width: 100%;
+  width: 13rem;
   height: 2rem;
   font-size: 1rem;
   outline: none;
@@ -38,7 +38,8 @@
     border: none;
     overflow: hidden;
     resize: none;
-    padding-left: 0.5rem;
+    padding-left: 0.9rem;
+    margin-top: 1.5rem;
   }
 }
 

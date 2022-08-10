@@ -22,7 +22,8 @@ title.addEventListener("click", () => {
 title.addEventListener("keydown", () => {
   if (getWidth() >= 992) {
     titleLabel.style.display = "inline";
+    title.style.borderLeft = "0.1rem solid grey";
   } else {
-    titleLabel.display = "none";
+    titleLabel.style.display = "none";
   }
 });

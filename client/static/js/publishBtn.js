@@ -13,40 +13,72 @@ for (let i = 0; i < bothBtns.length; i++) {
     // displays red message for smaller screens
     if (getWidth() < 992) {
       // input handling
-      if (title.value.length > 40) {
+      if (title.value.length > 2000) {
         warningPara.textContent = "Title is too big";
       } else if (title.value.length === 0) {
         warningPara.textContent = "Title cannot be empty";
-      } else if (yourName.value.length > 40) {
+      } else if (yourName.value.length > 2000) {
         warningPara.textContent = "Author is too big";
       } else if (yourName.value.length === 0) {
         warningPara.textContent = "Author cannot be empty";
-      } else if (yourStory.value.length > 40) {
+      } else if (yourStory.value.length > 2000) {
         warningPara.textContent = "Your story is too big";
       } else if (yourStory.value.length === 0) {
         warningPara.textContent = "Your story cannot be empty";
       } else {
         warningPara.textContent = "";
+        titleLabel.style.display = "none";
+        title.style.borderColor = "#fffafa";
+        authorLabel.style.display = "none";
+        yourName.style.borderColor = "#fffafa";
+        timeStamp.style.display = "block";
+
+        // clears screen to go again
+        if (btn.textContent !== "NEW") {
+          btn.textContent = "NEW";
+        } else {
+          btn.textContent = "PUBLISH";
+          title.value = "";
+          yourName.value = "";
+          yourStory.value = "";
+          timeStamp.style.display = "none";
+        }
       }
     }
 
     // displays red message for larger screens
     if (getWidth() >= 992) {
       // input handling
-      if (title.value.length > 40) {
+      if (title.value.length > 2000) {
         warningPara.textContent = "Title is too big";
       } else if (title.value.length === 0) {
         warningPara.textContent = "Title cannot be empty";
-      } else if (yourName.value.length > 40) {
+      } else if (yourName.value.length > 2000) {
         warningPara.textContent = "Author is too big";
       } else if (yourName.value.length === 0) {
         warningPara.textContent = "Author cannot be empty";
-      } else if (yourStory2.value.length > 40) {
+      } else if (yourStory2.value.length > 2000) {
         warningPara.textContent = "Your story is too big";
       } else if (yourStory2.value.length === 0) {
         warningPara.textContent = "Your story cannot be empty";
       } else {
         warningPara.textContent = "";
+        titleLabel.style.display = "none";
+        title.style.borderColor = "#fffafa";
+        authorLabel.style.display = "none";
+        yourName.style.borderColor = "#fffafa";
+        timeStamp.style.display = "block";
+
+        // clears screen to go again
+        if (btn2.textContent !== "NEW") {
+          btn2.textContent = "NEW";
+        } else {
+          btn2.textContent = "PUBLISH";
+          title.value = "";
+          yourName.value = "";
+          yourStory2.value = "";
+          timeStamp.style.display = "none";
+        }
       }
     }
   });
