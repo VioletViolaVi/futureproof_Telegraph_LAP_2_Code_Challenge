@@ -33,12 +33,14 @@
   #yourStory2 {
     display: inline;
     width: 38rem;
-    height: 2rem;
+    height: 4rem;
     font-size: 1rem;
     outline: none;
     border: none;
     overflow: hidden;
     resize: none;
+    margin-left: 3.3rem;
+    padding-left: 0.5rem;
     border: solid 0.1rem black;
   }
 }
