@@ -23,6 +23,7 @@
     <script src="./static/js/variables.js" defer></script>
     <script src="./static/js/title.js" defer></script>
     <script src="./static/js/yourName.js" defer></script>
+    <script src="./static/js/dateStamp.js" defer></script>
     <script src="./static/js/icons.js" defer></script>
     <script src="./static/js/yourStory.js" defer></script>
     <script src="./static/js/publishBtn.js" defer></script>
@@ -34,6 +35,7 @@
       <form action="" id="formBg">
         <!-- inputs -->
         <aside id="titleInputAndLabelBg">
+          <!-- tile field -->
           <label for="" id="titleLabel">Title</label>
           <input
             type="text"
@@ -43,6 +45,7 @@
           />
         </aside>
 
+        <!-- your name field -->
         <aside id="yourNameInputAndLabelBg">
           <label for="" id="authorLabel">Author</label>
           <input
@@ -51,8 +54,12 @@
             placeholder="Your name (max 40)"
             name="yourName"
           />
+
+          <!-- time stamp -->
+          <p id="timeStamp"></p>
         </aside>
 
+        <!-- your story field & icons -->
         <section id="yourStoryAndIcons">
           <aside id="iconsBg">
             <i id="left" class="fa-solid fa-angle-left"></i>
@@ -85,6 +92,7 @@
       <!-- btn for larger screens -->
       <button id="btn2">PUBLISH</button>
 
+      <!-- warning messages -->
       <aside id="warningBg">
         <p id="warningPara"></p>
       </aside>
