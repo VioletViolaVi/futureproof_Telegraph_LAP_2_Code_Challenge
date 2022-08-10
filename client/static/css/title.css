@@ -1,0 +1,49 @@
+#titleLabel {
+  display: none;
+}
+
+#title {
+  width: 100%;
+  height: 3rem;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  font-weight: 900;
+  /* border: solid 0.1rem black; */
+}
+
+@media (min-width: 576px) {
+  #title {
+    width: 30rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #title {
+    width: 42rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #titleLabel {
+    display: none;
+    text-align: right;
+    clear: both;
+    font-size: 1.5rem;
+    color: grey;
+    /* float: left; */
+  }
+
+  #title {
+    width: 38rem;
+    padding-left: 0.5rem;
+    margin-left: 0.3rem;
+    border-left: 0.1rem solid grey;
+  }
+}
+
+@media (min-width: 1200px) {
+  #title {
+    width: 48rem;
+  }
+}

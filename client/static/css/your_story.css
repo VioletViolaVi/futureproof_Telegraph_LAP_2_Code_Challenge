@@ -1,0 +1,52 @@
+#yourStory {
+  width: 100%;
+  height: 2rem;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  overflow: hidden;
+  resize: none;
+  /* border: solid 0.1rem black; */
+}
+
+#yourStory2 {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  #yourStory {
+    width: 30rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #yourStory {
+    width: 42rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #yourStory {
+    display: none;
+  }
+
+  #yourStory2 {
+    display: inline;
+    width: 38rem;
+    height: 4rem;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    overflow: hidden;
+    resize: none;
+    margin-left: 3.3rem;
+    padding-left: 0.5rem;
+    /* border: solid 0.1rem black; */
+  }
+}
+
+@media (min-width: 1200px) {
+  #yourStory2 {
+    width: 48rem;
+  }
+}

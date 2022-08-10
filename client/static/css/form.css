@@ -1,0 +1,20 @@
+#formBg {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: start;
+  justify-items: start;
+  padding: 2rem 0 0 1.5rem;
+}
+
+@media (min-width: 992px) {
+  #formBg {
+    padding-left: 8rem;
+    grid-gap: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #formBg {
+    padding: 2rem 0 0;
+  }
+}

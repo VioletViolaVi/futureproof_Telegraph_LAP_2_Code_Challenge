@@ -1,0 +1,21 @@
+#yourStoryAndIcons {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+#iconsBg {
+  margin-right: 0.5rem;
+  display: none;
+}
+
+.fa-solid.fa-camera,
+.fa-solid.fa-angle-left,
+.fa-solid.fa-angle-right {
+  display: none;
+  cursor: pointer;
+  color: #353839;
+}
+
+.fa-solid.fa-angle-right {
+  margin: 0 0.5rem 0 0;
+}
