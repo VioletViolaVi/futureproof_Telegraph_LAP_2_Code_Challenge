@@ -31,14 +31,24 @@
   <body id="bodyBg">
     <main id="bgForFormAndBtn2">
       <form action="" id="formBg">
-        <aside>
+        <aside id="titleInputAndLabelBg">
           <label for="" id="titleLabel">Title</label>
-          <input type="text" id="title" placeholder="Title (max 40)" />
+          <input
+            type="text"
+            id="title"
+            placeholder="Title (max 40)"
+            name="title"
+          />
         </aside>
 
-        <aside>
+        <aside id="yourNameInputAndLabelBg">
           <label for="" id="authorLabel">Author</label>
-          <input type="text" id="yourName" placeholder="Your name (max 40)" />
+          <input
+            type="text"
+            id="yourName"
+            placeholder="Your name (max 40)"
+            name="yourName"
+          />
         </aside>
 
         <section id="yourStoryAndIcons">
@@ -50,7 +60,7 @@
           <!-- smaller screens -->
           <textarea
             onkeyup="textAreaAdjust(this)"
-            name=""
+            name="yourStory"
             id="yourStory"
             cols="20"
             rows="10"
@@ -58,7 +68,7 @@
           ></textarea>
           <!-- larger screens -->
           <textarea
-            name=""
+            name="yourStory2"
             id="yourStory2"
             cols="20"
             rows="10"
