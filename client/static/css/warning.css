@@ -1,0 +1,27 @@
+#warningBg {
+  margin: 0.5rem 1rem;
+}
+
+#warningPara {
+  color: red;
+  font-size: 1rem;
+  display: inline;
+}
+
+@media (min-width: 992px) {
+  #warningBg {
+    position: relative;
+  }
+
+  #warningPara {
+    position: absolute;
+    right: -33.5rem;
+    top: -38rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #warningPara {
+    right: -32rem;
+  }
+}

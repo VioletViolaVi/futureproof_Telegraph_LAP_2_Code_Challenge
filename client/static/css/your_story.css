@@ -1,0 +1,50 @@
+#yourStory {
+  width: 13rem;
+  height: 2rem;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  overflow: hidden;
+  resize: none;
+}
+
+#yourStory2 {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  #yourStory {
+    width: 30rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #yourStory {
+    width: 42rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #yourStory {
+    display: none;
+  }
+
+  #yourStory2 {
+    display: inline;
+    width: 38rem;
+    height: 33rem;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    overflow: hidden;
+    resize: none;
+    padding-left: 0.9rem;
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #yourStory2 {
+    width: 48rem;
+  }
+}

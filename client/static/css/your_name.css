@@ -1,0 +1,60 @@
+#authorLabel {
+  display: none;
+}
+
+#yourName {
+  width: 100%;
+  height: 3rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+}
+
+#timeStamp {
+  font-size: 0.9rem;
+  color: grey;
+  display: none;
+}
+
+@media (min-width: 576px) {
+  #yourName {
+    width: 30rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #yourName {
+    width: 42rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #yourNameInputAndLabelBg {
+    position: relative;
+  }
+
+  #authorLabel {
+    font-size: 1rem;
+    color: grey;
+    position: absolute;
+    left: -3.5rem;
+    bottom: 0.7rem;
+  }
+
+  #yourName {
+    width: 38rem;
+    padding-left: 0.5rem;
+    margin-left: 0.3rem;
+    border-left: none;
+  }
+
+  #timeStamp {
+    margin-left: 0.9rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #yourName {
+    width: 51rem;
+  }
+}

@@ -1,0 +1,61 @@
+#inputsAndBtnBg {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+#btn {
+  color: #353839;
+  background-color: #fffafa;
+  border-radius: 2rem;
+  padding: 0.3rem 0.5rem;
+  width: 6rem;
+  font-weight: 900;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#btn2 {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  #bgForFormAndBtn2 {
+    display: grid;
+    grid-template-columns: 52rem 7rem;
+    align-items: baseline;
+    justify-items: center;
+  }
+
+  #btn {
+    display: none;
+  }
+
+  #btn2 {
+    display: inline;
+    color: #353839;
+    background-color: #fffafa;
+    border-radius: 2rem;
+    padding: 0.3rem 0.5rem;
+    width: 6rem;
+    font-weight: 900;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #bgForFormAndBtn2 {
+    grid-template-columns: 37rem 16rem;
+    justify-content: end;
+  }
+
+  #bgForFormAndBtn2 {
+    justify-items: center;
+  }
+}
+
+@media (min-width: 1500px) {
+  #bgForFormAndBtn2 {
+    grid-template-columns: 0 52rem;
+  }
+}
