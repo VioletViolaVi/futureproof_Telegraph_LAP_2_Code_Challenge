@@ -2,8 +2,7 @@
   "description": "lap2 api",
   "scripts": {
     "start": "node dbConfig/dbInit.js",
-    "dev": "nodemon -L index.js",
-    "startAll": "npm run start && npm run dev"
+    "dev": "nodemon -L index.js"
   },
   "jest": {
     "testEnvironment": "node",
@@ -19,6 +18,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "node-fetch": "^3.2.10",
     "pg": "^8.3.3"
   }
 }
