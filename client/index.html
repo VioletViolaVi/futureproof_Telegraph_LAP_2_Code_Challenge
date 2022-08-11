@@ -20,58 +20,82 @@
       defer
     ></script>
     <!-- custom js links -->
-    <script src="./static/js/icons.js" defer></script>
-    <script src="./static/js/publishBtn.js" defer></script>
+    <script src="./static/js/variables.js" defer></script>
     <script src="./static/js/title.js" defer></script>
     <script src="./static/js/yourName.js" defer></script>
+    <script src="./static/js/dateStamp.js" defer></script>
+    <script src="./static/js/icons.js" defer></script>
     <script src="./static/js/yourStory.js" defer></script>
     <script src="./static/js/scripts.js"defer ></script>
+    <script src="./static/js/publishBtn.js" defer></script>
     <title>Telegraph | LAP 2 Code Challenge</title>
   </head>
-  <body id="bodyBg">
-    <main id="bgForFormAndBtn2">
-      <form action="http://localhost:3000/posts/newpost" method="POST" id="formBg">
-        <aside>
-          <label for="title" id="titleLabel">Title</label>
-          <input type="text" name="title" id="title" placeholder="Title" />
-        </aside>
-        
-        <aside>
-          <label for="name" id="authorLabel">Author</label>
-          <input type="text" name="name" id="yourName" placeholder="Your name" />
-        </aside>
-        
-        <section id="yourStoryAndIcons">
-          <aside id="iconsBg">
-            <i id="left" class="fa-solid fa-angle-left"></i>
-            <i id="right" class="fa-solid fa-angle-right"></i>
-            <i id="camera" class="fa-solid fa-camera"></i>
+  <body>
+    <main id="bgForFormAndBtn2">  
+        <!-- form -->
+        <form action="http://localhost:3000/posts/newpost" method="POST" id="formBg">
+          <!-- inputs -->
+          <aside id="titleInputAndLabelBg">
+            <!-- tile field -->
+            <label for="title" id="titleLabel">Title</label>
+            <input
+              type="text"
+              id="title"
+              placeholder="Title (max 40)"
+              name="title"
+            />
           </aside>
-          <!-- smaller screens -->
-          <textarea
-          onkeyup="textAreaAdjust(this)"
-          name="post"
-          id="yourStory"
-          cols="20"
-          rows="10"
-          placeholder="Your story..."
-          ></textarea>
-          <!-- larger screens -->
-          <textarea
-          name="post"
-          id="yourStory2"
-          cols="20"
-          rows="10"
-          placeholder="Your story..."
-          ></textarea>
-        </section>
-
-        <button id="btn">PUBLISH</button>
-      </form>
-      <button id="btn2">PUBLISH</button>
-      
-      <aside>
-        <p id="warningPara">Title is too small</p>
+  
+          <!-- your name field -->
+          <aside id="yourNameInputAndLabelBg">
+            <label for="name" id="authorLabel">Author</label>
+            <input
+              type="text"
+              id="yourName"
+              placeholder="Your name (max 40)"
+              name="name"
+            />
+  
+            <!-- time stamp -->
+            <p id="timeStamp"></p>
+          </aside>
+  
+          <!-- your story field & icons -->
+          <section id="yourStoryAndIcons">
+            <aside id="iconsBg">
+              <i id="left" class="fa-solid fa-angle-left"></i>
+              <i id="right" class="fa-solid fa-angle-right"></i>
+              <i id="camera" class="fa-solid fa-camera"></i>
+            </aside>
+            <!-- smaller screens -->
+            <textarea
+              onkeyup="textAreaAdjust(this)"
+              name="post"
+              id="yourStory"
+              cols="30"
+              rows="10"
+              placeholder="Your story... (max 2000)"
+            ></textarea>
+            <!-- larger screens -->
+            <textarea
+              name="post"
+              id="yourStory2"
+              cols="20"
+              rows="10"
+              placeholder="Your story... (max 2000)"
+            ></textarea>
+          </section>
+  
+          <!-- btn for smaller screens -->
+          <button id="btn">PUBLISH</button>
+        </form>
+  
+        <!-- btn for larger screens -->
+        <button id="btn2">PUBLISH</button>
+  
+        <!-- warning messages -->
+        <aside id="warningBg">
+          <p id="warningPara"></p>
       </aside>
       <h1>Posts</h1>
       <div id="postList"></div>

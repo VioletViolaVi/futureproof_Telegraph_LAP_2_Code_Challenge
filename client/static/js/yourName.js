@@ -1,8 +1,4 @@
-// label
-const authorLabel = document.getElementById("authorLabel");
-// input field
-const yourName = document.getElementById("yourName");
-
+/********************************************************************* yourName / author */
 yourName.addEventListener("click", () => {
   // icons
   iconsBg.style.display = "none";
@@ -12,14 +8,11 @@ yourName.addEventListener("click", () => {
 });
 
 yourName.addEventListener("keydown", () => {
-  // label
-  authorLabel.style.display = "inline";
-  authorLabel.style.transition = "all 42s";
-});
-
-yourName.addEventListener("keydown", () => {
+  // stops label showing on smaller screens
   if (getWidth() >= 992) {
-    // label
     authorLabel.style.display = "inline";
+    yourName.style.borderLeft = "0.1rem solid grey";
+  } else {
+    authorLabel.style.display = "none";
   }
 });

@@ -1,8 +1,4 @@
-// label
-const titleLabel = document.getElementById("titleLabel");
-// title input
-const title = document.getElementById("title");
-
+/********************************************************************* title */
 // gets width of browser screen
 function getWidth() {
   return Math.max(
@@ -25,7 +21,9 @@ title.addEventListener("click", () => {
 // stops label showing on smaller screens
 title.addEventListener("keydown", () => {
   if (getWidth() >= 992) {
-    // label
     titleLabel.style.display = "inline";
+    title.style.borderLeft = "0.1rem solid grey";
+  } else {
+    titleLabel.style.display = "none";
   }
 });

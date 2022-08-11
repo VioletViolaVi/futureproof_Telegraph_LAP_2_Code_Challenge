@@ -9,7 +9,6 @@
   border: none;
   outline: none;
   font-weight: 900;
-  /* border: solid 0.1rem black; */
 }
 
 @media (min-width: 576px) {
@@ -25,20 +24,23 @@
 }
 
 @media (min-width: 992px) {
+  #titleInputAndLabelBg {
+    position: relative;
+  }
+
   #titleLabel {
-    display: none;
-    text-align: right;
-    clear: both;
     font-size: 1.5rem;
     color: grey;
-    /* float: left; */
+    position: absolute;
+    left: -3.5rem;
+    bottom: 0.7rem;
   }
 
   #title {
     width: 38rem;
     padding-left: 0.5rem;
     margin-left: 0.3rem;
-    border-left: 0.1rem solid grey;
+    border-left: none;
   }
 }
 

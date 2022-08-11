@@ -1,12 +1,11 @@
 #yourStory {
-  width: 100%;
+  width: 13rem;
   height: 2rem;
   font-size: 1rem;
   outline: none;
   border: none;
   overflow: hidden;
   resize: none;
-  /* border: solid 0.1rem black; */
 }
 
 #yourStory2 {
@@ -33,15 +32,14 @@
   #yourStory2 {
     display: inline;
     width: 38rem;
-    height: 4rem;
+    height: 33rem;
     font-size: 1rem;
     outline: none;
     border: none;
     overflow: hidden;
     resize: none;
-    margin-left: 3.3rem;
-    padding-left: 0.5rem;
-    /* border: solid 0.1rem black; */
+    padding-left: 0.9rem;
+    margin-top: 1.5rem;
   }
 }
 
